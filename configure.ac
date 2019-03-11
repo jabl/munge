@@ -30,8 +30,8 @@
 ##
 # Prologue.
 ##
-AC_INIT
 X_AC_META
+AC_INIT([m4_eval($PACKAGE)], [VERSION])
 AC_CONFIG_AUX_DIR([config])
 AC_CONFIG_SRCDIR([src/libmunge/munge.h])
 X_AC_CANONICAL
@@ -41,7 +41,7 @@ X_AC_EXPAND_INSTALL_DIRS
 ##
 # Automake support.
 ##
-AM_INIT_AUTOMAKE([$PACKAGE], [$VERSION])
+AM_INIT_AUTOMAKE
 AC_CONFIG_HEADERS([config/config.h])
 AM_MAINTAINER_MODE
 
